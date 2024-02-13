@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color: cadetblue;
+}
+.buttons{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    height: 6%;
+    margin: 60px;
+    
+}
+button{
+    background: rgb(49, 48, 48);
+    color: white;
+    width: 8vw;
+    border: none;
+    border-radius: 5px;
+}
+#toastBox{
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 20px;
+}
+.toast{
+    width: 400px;
+    height: 70px;
+    background: #fff;
+    font-weight: 500;
+    margin: 15px 0;
+    box-shadow: 0 0 15px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+.toast i{
+    margin: 0 20px;
+    font-size: 53px;
+    color: green;
+}
+@media screen and (max-width: 600px) {
+    button{
+       width: 100px;
+        
+        gap: 10px;
+    }
+    .buttons{
+        gap: 15px;
+        flex-direction: column;
+        margin-right: 50px;
+    }
+   .toast{
+    width: 200px;
+    height: 50px;
+    gap: 10px;
+    flex-direction: column-reverse;
+   }
+   .toast i{
+    font-size: 1rem;
+   }
+  }
